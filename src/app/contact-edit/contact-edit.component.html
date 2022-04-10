@@ -1,0 +1,46 @@
+<div class="jumbotron text-center">
+    <h1 class="display-5">
+      {{ title }}
+    </h1>
+  </div>
+  
+  <div class="container">
+    <div class="row custom-wrapper">
+      <div class="col-md-12">
+  
+        <!-- Form starts -->
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  
+          <div class="group-gap">
+  
+            <!-- Name -->
+            <div >
+              <div class="mb-3">
+                <label >
+                  Full name</label>
+                <input type="text" class="form-control" formControlName="name">
+              </div>
+  
+            </div>
+
+              <!-- Job -->
+              <div >
+                <div class="mb-3">
+                  <label >
+                    Date of Birth</label>
+                    <input type="text" class="form-control" formControlName="job" >
+                </div>
+    
+              </div>
+
+
+      </div>
+  
+      
+         <button type="submit" class="btn btn-danger btn-lg btn-block">Submit</button>
+        </form><!-- Form ends -->
+  
+      </div>
+    </div>
+  </div>
+  
